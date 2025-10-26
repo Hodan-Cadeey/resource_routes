@@ -1,0 +1,22 @@
+[
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "0612345678",
+    "position": "Manager",
+    "salary": 5500.00,
+    "hire_date": "2020-05-10",
+    "active": true
+  },
+  {
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "jane.smith@example.com",
+    "phone": "0623456789",
+    "position": "Developer",
+    "salary": 4200.00,
+    "hire_date": "2021-03-15",
+    "active": true
+  }
+]
