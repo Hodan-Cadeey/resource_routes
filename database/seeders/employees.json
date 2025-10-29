@@ -18,5 +18,85 @@
     "salary": 4200.00,
     "hire_date": "2021-03-15",
     "active": true
+  },
+  {
+    "first_name": "Lars",
+    "last_name": "van Dijk",
+    "email": "lars.vandijk@example.com",
+    "phone": "0634567890",
+    "position": "Designer",
+    "salary": 3900.00,
+    "hire_date": "2022-01-20",
+    "active": true
+  },
+  {
+    "first_name": "Sophie",
+    "last_name": "de Jong",
+    "email": "sophie.dejong@example.com",
+    "phone": "0645678901",
+    "position": "HR Specialist",
+    "salary": 4100.00,
+    "hire_date": "2019-09-12",
+    "active": true
+  },
+  {
+    "first_name": "Noah",
+    "last_name": "Bakker",
+    "email": "noah.bakker@example.com",
+    "phone": "0656789012",
+    "position": "Data Analyst",
+    "salary": 4400.00,
+    "hire_date": "2023-02-01",
+    "active": true
+  },
+  {
+    "first_name": "Emma",
+    "last_name": "Visser",
+    "email": "emma.visser@example.com",
+    "phone": "0667890123",
+    "position": "Marketing Coordinator",
+    "salary": 4000.00,
+    "hire_date": "2021-07-18",
+    "active": false
+  },
+  {
+    "first_name": "Daan",
+    "last_name": "Bos",
+    "email": "daan.bos@example.com",
+    "phone": "0678901234",
+    "position": "Sales Representative",
+    "salary": 4300.00,
+    "hire_date": "2020-11-03",
+    "active": true
+  },
+  {
+    "first_name": "Mila",
+    "last_name": "Smit",
+    "email": "mila.smit@example.com",
+    "phone": "0689012345",
+    "position": "Product Owner",
+    "salary": 5600.00,
+    "hire_date": "2018-06-25",
+    "active": true
+  },
+  {
+    "first_name": "Finn",
+    "last_name": "de Vries",
+    "email": "finn.devries@example.com",
+    "phone": "0690123456",
+    "position": "Support Engineer",
+    "salary": 3700.00,
+    "hire_date": "2022-10-09",
+    "active": true
+  },
+  {
+    "first_name": "Lotte",
+    "last_name": "van Leeuwen",
+    "email": "lotte.vanleeuwen@example.com",
+    "phone": "0610123456",
+    "position": "Accountant",
+    "salary": 4800.00,
+    "hire_date": "2019-04-14",
+    "active": false
   }
 ]

@@ -13,7 +13,7 @@ auth.json
 
 # Editor-/IDE-specifieke mappen
 /.idea/
-/.vscode/
+/.vscode/  
 /.fleet/
 /.zed/
 
