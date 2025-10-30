@@ -14,7 +14,7 @@ class EmployeeController extends Controller
     public function index()
     {
         //
-        return view('employee.index', ['werknemers' =>Employee::all()]);
+        return view('employee.index', ['werknemers' => Employee::all()]);
     }
 
     /**
@@ -23,7 +23,7 @@ class EmployeeController extends Controller
     public function create()
     {
         //
-
+        return view('employee.create');
     }
 
     /**
@@ -32,6 +32,20 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
         //
+        $validated = $request->validate([
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:255',
+            'position' => 'required|string|max:255',
+            'salary' => 'required|numeric|min:0',
+            'hire_date'  => 'required|date',
+
+        ]);
+
+        Employee::create($validated);
+
+        return redirect()->route('employee.index')->with('Succes', 'werknemers is succesvoll aangemaakt!');
     }
 
     /**
@@ -48,6 +62,8 @@ class EmployeeController extends Controller
     public function edit(string $id)
     {
         //
+        $employee  = Employee::findOrFail($id);
+        return view('employee.edit', compact('employee'));
     }
 
     /**
@@ -56,6 +72,21 @@ class EmployeeController extends Controller
     public function update(Request $request, string $id)
     {
         //
+        $request->validate([
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:255',
+            'position' => 'required|string|max:255',
+            'salary' => 'required|numeric|min:0',
+            'hire_date'  => 'required|date',
+        ]);
+
+        $employee = Employee::findOrFail($id);
+        $employee->update($request->all());
+
+        return redirect()->route('employee.index')
+         ->with('succes', 'Werknemer is succesvolle gewijzigd.');
     }
 
     /**
@@ -64,5 +95,8 @@ class EmployeeController extends Controller
     public function destroy(string $id)
     {
         //
+        $employee = Employee::findOrFail($id);
+        $employee->delete();
+        return redirect()->route('employee.index')->with('succes', 'Werknemer is succesvolle verwijdert.');
     }
 }

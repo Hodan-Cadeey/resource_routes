@@ -16,8 +16,7 @@ class EmployeeSeeder extends Seeder
         //
          $json = file_get_contents(database_path('seeders/employees.json'));
         $employees = json_decode($json, true);
-
-        DB::table('employees')->insert($employees);
+        
          foreach ($employees as $employee) {
             DB::table('employees')->insert([
                 'first_name' => $employee['first_name'],
